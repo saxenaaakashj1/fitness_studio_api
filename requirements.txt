@@ -1,0 +1,6 @@
+flask
+flask-smorest
+email_validator
+marshmallow
+pytz
+python-dotenv
