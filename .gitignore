@@ -1,9 +1,29 @@
-.vscode
-.venv
+# ───── IDE & OS FILES ─────
+.idea/
 .DS_Store
-.idea
-pipeline.sh
-pyproject.toml
+
+# ───── PYTHON ENVIRONMENTS ─────
+.venv
+
+# ───── PYTHON CACHE ─────
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
+
+# ───── ENVIRONMENT VARIABLES ─────
+.flaskenv
+
+# ───── SQLITE DATABASES ─────
+instance/
+*.sqlite
+
+# ───── LOGS / TEMP FILES ─────
+*.log
+*.tmp
+*.bak
+
+# ───── BUILD / DIST ─────
+build/
+dist/
+*.egg-info/
