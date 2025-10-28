@@ -110,33 +110,41 @@ On first run, the following classes are added automatically to the database fitn
 | Zumba      | Nidhi      | 10 days from now         | 10              |
 | HIIT       | Mohit      | 10 days from now         | 10              |
 
-
----
-
-## ✅ Environment Setup
-
-.flaskenv is already configured:
-
-```
-FLASK_APP=app
-FLASK_DEBUG=1
-```
-
 ---
 
 ## 📁 File Structure
 
 ```
-booking_api/
-├── resources/              # Routes for API
-│   ├── bookings.py
-│   └── classes.py
-├── .flaskenv               # Flask environment variables
-├── app.py                  # Main Flask app entry point
-├── db.py                   # SQLite DB connection and config
-├── docker-compose.yml      # Compose file to run app using Docker
-├── dockerfile              # Dockerfile to build the app image
-├── requirements.txt        # Python dependencies
-├── schemas.py              # Marshmallow schemas for validation
-├── utils.py                # Helper functions (e.g., timezone conversion)
+fitness_studio_api/
+│
+├── app.py                          # Entry point of the application
+├── requirements.txt
+├── dockerfile
+├── docker-compose.yml
+├── .gitignore
+├── README.md
+│
+├── instance/
+│   └── fitness_studio.sqlite       # Database 
+│
+├── fitness_studio/
+│   ├── __init__.py                 # Initialize Flask app & extensions
+│   │
+│   ├── models/                     # Database models
+│   │   ├── __init__.py
+│   │   ├── db.py
+│   │
+│   ├── resources/                  # All route handlers (Flask-RESTful resources) 
+│   │   ├── __init__.py
+│   │   ├── bookings.py
+│   │   ├── classes.py
+│   │
+│   ├── schemas/                  
+│   │   ├── __init__.py             # Marshmallow schemas
+│   │   ├── schemas.py
+│   │
+│   ├── utils/                      # Helper functions (timezone, validation, etc.)
+│   │   ├── __init__.py
+│   │   └── utils.py
+│   │
 ```

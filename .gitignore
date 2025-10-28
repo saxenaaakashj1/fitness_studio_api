@@ -1,9 +1,12 @@
 # ───── IDE & OS FILES ─────
+.vscode/
 .idea/
 .DS_Store
 
 # ───── PYTHON ENVIRONMENTS ─────
-.venv
+.venv/
+env/
+venv/
 
 # ───── PYTHON CACHE ─────
 __pycache__/
@@ -13,10 +16,12 @@ __pycache__/
 
 # ───── ENVIRONMENT VARIABLES ─────
 .flaskenv
+.env
 
 # ───── SQLITE DATABASES ─────
 instance/
 *.sqlite
+*.db
 
 # ───── LOGS / TEMP FILES ─────
 *.log
@@ -27,3 +32,5 @@ instance/
 build/
 dist/
 *.egg-info/
+
+pyproject.toml
