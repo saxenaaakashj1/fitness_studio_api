@@ -1,8 +1,11 @@
-from db import connection
-from schemas import ClassResponseSchema, TimezoneQuerySchema
+from fitness_studio.models.db import connection
+from fitness_studio.schemas.schemas import (
+    ClassResponseSchema,
+    TimezoneQuerySchema,
+)
 from flask_smorest import Blueprint
 from flask.views import MethodView
-from utils import convert_timezone, validate_timezone
+from fitness_studio.utils.utils import convert_timezone, validate_timezone
 
 
 # Blueprint for class-related routes

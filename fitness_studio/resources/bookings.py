@@ -1,4 +1,4 @@
-from schemas import (
+from fitness_studio.schemas.schemas import (
     CreateBookingRequestSchema,
     BookingResponseSchema,
     BookingQuerySchema,
@@ -6,8 +6,8 @@ from schemas import (
 from flask_smorest import abort, Blueprint
 from flask.views import MethodView
 from datetime import datetime, timezone
-from utils import convert_timezone, validate_timezone
-from db import connection
+from fitness_studio.utils.utils import convert_timezone, validate_timezone
+from fitness_studio.models.db import connection
 from email_validator import validate_email, EmailNotValidError
 
 # Blueprint for booking-related routes
@@ -28,7 +28,7 @@ class GetBookings(MethodView):
         timezone (str): Timezone name (default: Asia/Kolkata)
 
     Returns:
-        List of bookings associated with the provided email, with datetimes
+        List of bookings associated with the provided email, with datetime
         converted to the requested timezone.
     """
 

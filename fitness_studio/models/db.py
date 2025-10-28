@@ -1,12 +1,21 @@
+import os
 import sqlite3
 from datetime import datetime, timedelta
 import pytz
 
+# Get absolute path to project root (/app)
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
+
+# Path to instance folder inside the container
+DB_PATH = os.path.join(BASE_DIR, "instance", "fitness_studio.sqlite")
+
+# Ensure directory exists
+os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
 
 # Establish a connection to the SQLite database
 # 'check_same_thread=False' allows use of the connection across threads
 # (useful in Flask apps)
-connection = sqlite3.connect("fitness_studio.sqlite", check_same_thread=False)
+connection = sqlite3.connect(DB_PATH, check_same_thread=False)
 cursor = connection.cursor()
 
 # Create tables for classes and bookings if they don't already exist

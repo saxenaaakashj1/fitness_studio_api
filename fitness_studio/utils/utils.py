@@ -33,5 +33,5 @@ def convert_timezone(original_tz_str, target_tz_str):
         formatted as 'YYYY-MM-DD HH:MM:SS'.
     """
     target_tz = pytz.timezone(target_tz_str)
-    orignal_dt = datetime.fromisoformat(original_tz_str)
-    return orignal_dt.astimezone(target_tz).strftime("%Y-%m-%d %H:%M:%S")
+    original_dt = datetime.fromisoformat(original_tz_str)
+    return original_dt.astimezone(target_tz).strftime("%Y-%m-%d %H:%M:%S")

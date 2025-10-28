@@ -30,7 +30,7 @@ A **Flask-based RESTful API** for managing fitness class bookings. It allows cli
 ### 1. 📂 Clone the Repository
 
 ```bash
-git clone https://github.com/your_username/booking_api.git
+git clone https://github.com/saxenaaakashj1/fitness_studio_api.git
 cd booking_api
 ```
 
@@ -102,7 +102,7 @@ Explore, test, and document your API via Swagger:
 
 ## 🗃️ Initial Demo Data
 
-On first run, the following classes are added automatically to the database finess_studio.sqlite:
+On first run, the following classes are added automatically to the database fitness_studio.sqlite:
 
 | Class Name | Instructor | Scheduled Datetime (UTC) | Available Slots |
 |------------|------------|--------------------------|-----------------|

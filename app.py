@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_smorest import Api
-from resources.bookings import blueprint as bookings_blueprint
-from resources.classes import blueprint as classes_blueprint
+from fitness_studio.resources.bookings import blueprint as bookings_blueprint
+from fitness_studio.resources.classes import blueprint as classes_blueprint
 
 # Initialize the Flask application
 app = Flask(__name__)
