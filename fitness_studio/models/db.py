@@ -3,7 +3,7 @@ import sqlite3
 from datetime import datetime, timedelta
 import pytz
 
-# Get absolute path to project root (/app)
+# Get absolute path to project root (/fitness_studio_api)
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
 
 # Path to instance folder inside the container
