@@ -143,7 +143,7 @@ fitness_studio_api/
 │   │   ├── __init__.py             # Marshmallow schemas
 │   │   ├── schemas.py
 │   │
-│   ├── utils/                      # Helper functions (timezone, validation, etc.)
+│   ├── utils/                      # Helper functions (timezone conversion, validation, etc.)
 │   │   ├── __init__.py
 │   │   └── utils.py
 │   │
